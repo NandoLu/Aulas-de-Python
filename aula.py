@@ -13,11 +13,17 @@ print("Ex_9: ",((x + d) // b)+(a *(c + b - a)))
 
 # Desafio de distancia percorrida
 distancia = int(input("Digite a distancia: "))
-distancia*= 1000
-print("A distancia percorrida de Km corresponde a",distancia,"metros")
+print(f"A distancia percorrida de Km corresponde a {distancia*1000} metros")
 
 # Comandos de entrada e saída em Python 
 a = input("Digite um numero: ")
 b = input("Digite um numero: ")
 print (a+b)
 a = int
+
+# Valor booleano
+
+# booleano = bool(int(input("Digite um número: ")))
+booleano = input("É verdade? ").strip().lower() == "sim"
+print(booleano)
+
