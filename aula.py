@@ -29,17 +29,18 @@ booleano = input("É verdade? ").strip().lower() == "sim"
 print(booleano)
 
 # Exercicio com nome
-'''***
-rerwe
-***'''
 
 nome = input("Digite o nome: ")
 idade = int(input("Digite sua idade: "))
 altura = float(input("Digite sua altura: "))
-print(f" Olá, {nome}! \n Você tem {idade} anos \n Sua altura e {altura} metros")
-breakpoint
+
+print(f" Olá, {nome}! \n Você tem {idade} anos \n Sua altura e {altura} metros ou {int(altura*100)} cm")
+
+# outro exercicio
 
 n1 = float(input("Digite um numero: "))
 n2 = float(input("Digite outro numero: "))
 n3 = n1 + n2
-print(f"Vamos printar {n1}+{n2} = {n3}")
+print(f"Vamos printar {n1} + {n2} = {n3}")
+
+breakpoint
