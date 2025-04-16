@@ -105,10 +105,3 @@ while sistema == True :
             sistema = False
         case _:
             print("Codigo inválido!")
-
-    
-
-
-
-
-
