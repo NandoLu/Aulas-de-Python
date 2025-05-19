@@ -1,0 +1,3 @@
+import fisica
+
+fisica.aluno()
