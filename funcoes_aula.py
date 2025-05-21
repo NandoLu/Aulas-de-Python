@@ -9,15 +9,14 @@ acertos = 0
 def dezenas_usario():
     for i in range(6):
         dezena = int(input(f"Digite a {i+1}° dezena: "))   
-        while dezena < 1 or dezena > 60:
+        while dezena < 1 or dezena > 60 or dezena in dezenas:
             print("Dezena inválida, digite novamente!")
             dezena = int(input(f"Digite a {i+1}° dezena: "))
         dezenas.append(dezena)
 
 def sorteio_dezena():
-    for i in range(6):
-        sorte = random.randint(1,60)
-        mega.append(sorte)
+    mega = random.sample(range(1, 61),6)
+    return(mega)
 
 def verifica_mega(mega, dezenas,acertos):
     for i in range(1,60):
@@ -25,13 +24,14 @@ def verifica_mega(mega, dezenas,acertos):
             acertos = acertos + 1
     print(f" Você teve: {acertos} acertos")
 
+mega_sena = sorteio_dezena()
 dezenas_usario()
 sorteio_dezena()
 verifica_mega(mega, dezenas,acertos)
 dezenas.sort()
 print(dezenas)
-mega.sort()
-print(mega)
+mega_sena.sort()
+print(mega_sena)
 
 # Exercicio 2: Jogo de Dados
 # import random
